@@ -3,7 +3,7 @@ import getWeatherData from '../api/getApi';
 
 // Display values
 const showValues = data => {
-  el.temp.innerHTML = `${data.main.temp}`;
+  el.temp.innerHTML = `${Math.round(data.main.temp)}`;
 };
 
 // City search
