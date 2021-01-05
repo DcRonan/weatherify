@@ -6,4 +6,16 @@ const getWeatherData = async city => {
   return data;
 };
 
-export default getWeatherData;
+export default async city => {
+  const data = await getWeatherData(city)
+  
+  const windSpeed = Math.round(data.wind.speed * 3600 / 1610.3)
+
+  return {
+    time: new Date(data.timezone),
+    city: data.name,
+    temp: `Temp: ${Math.round(data.main.temp)}`,
+    feelsLike: `Feels like: ${data.main.feels_like}`,
+    wind: `${windSpeed} mph`
+  }
+};
