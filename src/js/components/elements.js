@@ -1,3 +1,7 @@
 const navBar = document.querySelector('nav');
+const temp = document.querySelector('temp');
 
-export default navBar;
+export { 
+  navBar,
+  temp
+ };
