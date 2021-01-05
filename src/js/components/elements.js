@@ -1,7 +1,9 @@
 const navBar = document.querySelector('nav');
-const temp = document.querySelector('temp');
+const form = document.querySelector('#form');
+const temp = document.querySelector('#temp');
 
-export { 
+export {
   navBar,
-  temp
- };
+  temp,
+  form,
+};

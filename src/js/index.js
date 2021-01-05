@@ -1,2 +1,2 @@
 import '../css/style.css';
-import './components/html/nav';
+import './components/display/values';
