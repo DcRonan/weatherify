@@ -3,15 +3,16 @@ import getWeatherData from '../api/getApi';
 
 // Display values
 const showValues = data => {
-  el.time.textContent = `${data.time}`;
-  el.cityName.textContent = `${data.city}`
-  el.temp.textContent = `${data.temp}`;
-  el.feelsLike.textContent = `${data.feelsLike}`;
-  el.wind.textContent = `${data.wind}`;
-  el.cloud.textContent = `${data.clouds}`;
-  el.sunrise.textContent = `${data.sunrise}`;
-  el.sunset.textContent = `${data.sunset}`;
+  el.time.textContent = data.time;
+  el.cityName.textContent = data.city;
+  el.temp.textContent = data.temp;
+  el.feelsLike.textContent = data.feelsLike;
+  el.wind.textContent = data.wind;
+  el.cloud.textContent = data.clouds;
+  el.sunrise.textContent = data.sunrise;
+  el.sunset.textContent = data.sunset;
   el.img.src = data.image;
+  el.desc.textContent = data.desc;
 };
 
 // City search

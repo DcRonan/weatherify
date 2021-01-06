@@ -9,7 +9,9 @@ const cloud = document.querySelector('#cloud');
 const sunrise = document.querySelector('#sunrise');
 const sunset = document.querySelector('#sunset');
 const img = document.createElement('img');
-document.body.appendChild(img);
+const imgDiv = document.querySelector('#icon');
+imgDiv.appendChild(img);
+const desc = document.querySelector('#description');
 
 export {
   navBar,
@@ -22,5 +24,6 @@ export {
   cloud,
   sunrise,
   sunset,
-  img
+  img,
+  desc
 };
