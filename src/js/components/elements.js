@@ -8,6 +8,8 @@ const wind = document.querySelector('#wind');
 const cloud = document.querySelector('#cloud');
 const sunrise = document.querySelector('#sunrise');
 const sunset = document.querySelector('#sunset');
+const img = document.createElement('img');
+document.body.appendChild(img);
 
 export {
   navBar,
@@ -19,5 +21,6 @@ export {
   wind,
   cloud,
   sunrise,
-  sunset
+  sunset,
+  img
 };

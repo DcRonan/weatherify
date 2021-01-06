@@ -19,6 +19,7 @@ export default async city => {
     wind: `Wind ${windSpeed} mph`,
     clouds: `Cloud Cover ${data.clouds.all}%`,
     sunrise: `Sunrise ${data.sys.sunrise}`,
-    sunset: `Sunset ${data.sys.sunset}`
+    sunset: `Sunset ${data.sys.sunset}`,
+    image: `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
   }
 };

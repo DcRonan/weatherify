@@ -11,6 +11,7 @@ const showValues = data => {
   el.cloud.textContent = `${data.clouds}`;
   el.sunrise.textContent = `${data.sunrise}`;
   el.sunset.textContent = `${data.sunset}`;
+  el.img.src = data.image;
 };
 
 // City search
