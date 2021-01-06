@@ -1,4 +1,4 @@
-import * as el from '../elements';
+import * as el from '../components/elements';
 import getWeatherData from '../api/getApi';
 
 // Display values

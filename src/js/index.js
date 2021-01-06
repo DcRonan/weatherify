@@ -1,2 +1,2 @@
 import '../css/style.css';
-import './components/display/values';
+import './display/values';
