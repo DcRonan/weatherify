@@ -3,10 +3,10 @@ import getWeatherData from '../api/getApi';
 
 // Display values
 const showValues = data => {
-  el.time.textContent = data.time;
   el.cityName.textContent = data.city;
   el.temp.textContent = data.temp;
   el.feelsLike.textContent = data.feelsLike;
+  el.humidity.textContent = data.humid;
   el.wind.textContent = data.wind;
   el.cloud.textContent = data.clouds;
   el.sunrise.textContent = data.sunrise;
