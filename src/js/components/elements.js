@@ -1,4 +1,3 @@
-const key = 'b65d7b54d34b0aecf82c86c39aabf664'
 const navBar = document.querySelector('nav');
 const main = document.querySelector('main');
 const form = document.querySelector('#form');
@@ -39,6 +38,5 @@ export {
   cTemp,
   errorMsg,
   section,
-  content,
-  key
+  content
 };

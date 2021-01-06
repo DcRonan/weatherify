@@ -54,6 +54,14 @@ I have created a weather app that allows you to search for any city and returns 
 3. - [ ] Run `git clone git@github.com:DcRonan/weatherify.git` to download <b>or</b> you can download using `HTTPS` by running `git clone https://github.com/DcRonan/weatherify.git` in the terminal
 4. - [ ] Run `cd weatherify` to enter directory
 5. - [ ] Run `npm i` to install all the packages
+6. - [ ] Sign up [here](https://home.openweathermap.org/users/sign_up) for your own API key (You will receive the key via email and can access it in your account)
+7. - [ ] Create a `key.js` file in `src/js/components` directory
+8. - [ ] Add below to your `key.js` file
+```
+const key = 'YOUR_API_KEY_HERE';
+
+export default key;
+```
 6. - [ ] Run `npm run build` to build the app
 7. - [ ] Go on your preferred `browser` and open `dist/index.html` in the folder directory
 
