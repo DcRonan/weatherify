@@ -1,8 +1,8 @@
 import Time from '../helpers/convertTime';
-import key from './key';
+import * as el from './elements';
 
 const getWeatherData = async (city) => {
-  const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&units=metric`);
+  const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${el.key}&units=metric`);
   const data = await response.json();
   return data;
 };
