@@ -12,6 +12,8 @@ const img = document.createElement('img');
 const imgDiv = document.querySelector('#icon');
 imgDiv.appendChild(img);
 const desc = document.querySelector('#description');
+const fTemp = document.querySelector('#fahrenheit');
+const cTemp = document.querySelector('#celsius');
 
 export {
   navBar,
@@ -25,5 +27,7 @@ export {
   sunrise,
   sunset,
   img,
-  desc
+  desc,
+  fTemp,
+  cTemp
 };
