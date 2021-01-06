@@ -9,12 +9,12 @@ const showValues = data => {
   el.cityName.textContent = data.city;
   el.temp.textContent = clicked === true ? `${Temp(Math.round(data.temp))}°F` : `${Math.round(data.temp)}°C`;
   el.feelsLike.textContent = clicked === true ? `${Temp(Math.round(data.feelsLike))}°F` : `${Math.round(data.feelsLike)}°C`;
-  el.humidity.textContent = data.humid;
-  el.wind.textContent = data.wind;
-  el.cloud.textContent = data.clouds;
+  el.humidity.textContent = `${data.humid}%`;
+  el.wind.textContent = `${data.wind} mph`;
+  el.cloud.textContent = `${data.clouds}%`;
   el.sunrise.textContent = data.sunrise;
   el.sunset.textContent = data.sunset;
-  el.img.src = data.image;
+  el.img.src = `https://openweathermap.org/img/wn/${data.image}@2x.png`;
   el.desc.textContent = data.desc;
 };
 
