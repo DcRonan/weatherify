@@ -1,5 +1,5 @@
 import * as el from '../components/elements';
-import getWeatherData from '../api/getApi';
+import getWeatherData from '../components/getWeather';
 import Temp from '../helpers/convertTemp';
 
 let clicked;
