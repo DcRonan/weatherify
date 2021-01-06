@@ -14,12 +14,12 @@ export default async (city) => {
   return {
     city: data.name,
     temp: `${data.main.temp}`,
-    feelsLike: `Feels like ${Math.round(data.main.feels_like)}°C`,
-    humid: `Humidity ${data.main.humidity}%`,
-    wind: `Wind ${windSpeed} mph`,
-    clouds: `Cloud Cover ${data.clouds.all}%`,
-    sunrise: `Sunrise ${Time(data.sys.sunrise)}`,
-    sunset: `Sunset ${Time(data.sys.sunset)}`,
+    feelsLike: `${Math.round(data.main.feels_like)}°C`,
+    humid: `${data.main.humidity}%`,
+    wind: `${windSpeed} mph`,
+    clouds: `${data.clouds.all}%`,
+    sunrise: Time(data.sys.sunrise),
+    sunset: Time(data.sys.sunset),
     image: `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`,
     desc: data.weather[0].description,
   };

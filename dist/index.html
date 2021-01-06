@@ -30,19 +30,51 @@
         </form>
     </nav>
 
-    <main class="mt-5">
+    <main>
         <section>
             <div id="content">
-                <div id="city"></div>
-                <div id="temp"></div>
-                <div id="feels-like"></div>
-                <div id="humid"></div>
-                <div id="wind"></div>
-                <div id="cloud"></div>
-                <div id="sunrise"></div>
-                <div id="sunset"></div>
-                <div id="icon"></div>
-                <div id="description"></div>
+                <div class="min-h-screen flex items-center justify-center">
+                    <div class="flex flex-col bg-white p-4 w-full max-w-xs rounded-lg shadow-xl border border-gray-200">
+                        <div id="city" class="font-bold text-xl"></div>
+                        <div class="text-sm text-gray-500">Today</div>
+                        <div class="mt-6 self-center inline-flex items-center justify-center rounded-lg text-indigo-400 h-24 w-24">
+                            <div id="icon"></div>
+                        </div>
+                        <div class="flex flex-row items-center justify-center mt-6">
+                            <div id="temp" class="font-medium text-5xl"></div>
+                            <div class="items-center ml-6">
+                                <div id="description"></div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-between mt-6 text-sm">
+                            <div class="flex flex-row items-center justify-between">
+                                <div class="font-medium">Feels like</div>
+                                <div id="feels-like" class="text-gray-500"></div>
+                            </div>
+                            <div class="flex flex-row items-center justify-between">
+                                <div class="font-medium">Humidity</div>
+                                <div id="humid" class="text-gray-500"></div>
+                            </div>
+                            <div class="flex flex-row items-center justify-between">
+                                <div class="font-medium">Wind</div>
+                                <div id="wind" class="text-gray-500"></div>
+                            </div>
+                            <div class="flex flex-row items-center justify-between">
+                                <div class="font-medium">Clouds</div>
+                                <div id="cloud" class="text-gray-500"></div>
+                            </div>
+                            
+                            <div class="flex flex-row items-center justify-between">
+                                <div class="font-medium">Sunrise</div>
+                                <div id="sunrise" class="text-gray-500"></div>
+                            </div>
+                            <div class="flex flex-row items-center justify-between">
+                                <div class="font-medium">Sunset</div>
+                                <div id="sunset" class="text-gray-500"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <div id="error-msg"></div>

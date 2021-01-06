@@ -37,7 +37,7 @@ const showValues = data => {
 // Error message
 const showError = () => el.errorMsg.textContent = 'Enter a valid city';
 const hideError = () => el.errorMsg.innerHTML = '';
-const removeInfo = () => el.section.innerHTML = '';
+const removeInfo = () => el.section.removeChild(el.content);
 const showContent = () => el.section.appendChild(el.content)
 
 // City search

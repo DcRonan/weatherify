@@ -18,6 +18,7 @@ const cTemp = document.querySelector('#celsius');
 const errorMsg = document.querySelector('#error-msg');
 const section = document.querySelector('section');
 const content = document.querySelector('#content');
+section.removeChild(content);
 
 export {
   navBar,
