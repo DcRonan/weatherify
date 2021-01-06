@@ -38,5 +38,5 @@ export {
   cTemp,
   errorMsg,
   section,
-  content
+  content,
 };

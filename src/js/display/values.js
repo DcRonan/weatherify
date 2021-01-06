@@ -4,6 +4,20 @@ import Temp from '../helpers/convertTemp';
 
 let clicked;
 
+// Display info
+const showValues = data => {
+  el.cityName.textContent = data.city;
+  el.temp.textContent = clicked === true ? `${Temp(Math.round(data.temp))}°F` : `${Math.round(data.temp)}°C`;
+  el.feelsLike.textContent = clicked === true ? `${Temp(Math.round(data.feelsLike))}°F` : `${Math.round(data.feelsLike)}°C`;
+  el.humidity.textContent = data.humid;
+  el.wind.textContent = data.wind;
+  el.cloud.textContent = data.clouds;
+  el.sunrise.textContent = data.sunrise;
+  el.sunset.textContent = data.sunset;
+  el.img.src = data.image;
+  el.desc.textContent = data.desc;
+};
+
 // Celsius
 el.cTemp.addEventListener('click', (e) => {
   e.preventDefault();
@@ -20,25 +34,11 @@ el.fTemp.addEventListener('click', (e) => {
   getWeatherData(city).then((result) => showValues(result));
 });
 
-// Display info
-const showValues = data => {
-  el.cityName.textContent = data.city;
-  el.temp.textContent = clicked === true ? `${Temp(Math.round(data.temp))}°F` : `${Math.round(data.temp)}°C`
-  el.feelsLike.textContent = clicked === true ? `${Temp(Math.round(data.feelsLike))}°F` : `${Math.round(data.feelsLike)}°C`;
-  el.humidity.textContent = data.humid;
-  el.wind.textContent = data.wind;
-  el.cloud.textContent = data.clouds;
-  el.sunrise.textContent = data.sunrise;
-  el.sunset.textContent = data.sunset;
-  el.img.src = data.image;
-  el.desc.textContent = data.desc;
-};
-
 // Error message
 const showError = () => el.errorMsg.textContent = 'Enter a valid city';
 const hideError = () => el.errorMsg.innerHTML = '';
 const removeInfo = () => el.section.removeChild(el.content);
-const showContent = () => el.section.appendChild(el.content)
+const showContent = () => el.section.appendChild(el.content);
 
 // City search
 el.form.addEventListener('submit', e => {
