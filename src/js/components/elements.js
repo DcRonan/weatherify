@@ -5,6 +5,9 @@ const cityName = document.querySelector('#city');
 const time = document.querySelector('#time');
 const feelsLike = document.querySelector('#feels-like');
 const wind = document.querySelector('#wind');
+const cloud = document.querySelector('#cloud');
+const sunrise = document.querySelector('#sunrise');
+const sunset = document.querySelector('#sunset');
 
 export {
   navBar,
@@ -13,5 +16,8 @@ export {
   cityName,
   time,
   feelsLike,
-  wind
+  wind,
+  cloud,
+  sunrise,
+  sunset
 };
