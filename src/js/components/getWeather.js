@@ -3,9 +3,10 @@ import * as el from './elements';
 
 const getWeatherData = async (city) => {
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${el.key}&units=metric`;
-  const response = await fetch(url);
-  const data = await response.json();
-  return data;
+  const response = await fetch(url)
+    .then((response) => response.json())
+    .catch((error) => alert(error));
+  return response;
 };
 
 export default async (city) => {
