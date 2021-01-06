@@ -14,7 +14,7 @@ export default async (city) => {
   return {
     city: data.name,
     temp: `${data.main.temp}`,
-    feelsLike: `${Math.round(data.main.feels_like)}°C`,
+    feelsLike: `${Math.round(data.main.feels_like)}`,
     humid: `${data.main.humidity}%`,
     wind: `${windSpeed} mph`,
     clouds: `${data.clouds.all}%`,
