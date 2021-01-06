@@ -34,13 +34,11 @@ const showValues = data => {
   el.desc.textContent = data.desc;
 };
 
-const content = document.querySelector('#content');
-
 // Error message
 const showError = () => el.errorMsg.textContent = 'Enter a valid city';
 const hideError = () => el.errorMsg.innerHTML = '';
 const removeInfo = () => el.section.innerHTML = '';
-const showContent = () => el.section.appendChild(content)
+const showContent = () => el.section.appendChild(el.content)
 
 // City search
 el.form.addEventListener('submit', e => {

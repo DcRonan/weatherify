@@ -17,6 +17,7 @@ const fTemp = document.querySelector('#fahrenheit');
 const cTemp = document.querySelector('#celsius');
 const errorMsg = document.querySelector('#error-msg');
 const section = document.querySelector('section');
+const content = document.querySelector('#content');
 
 export {
   navBar,
@@ -35,5 +36,6 @@ export {
   fTemp,
   cTemp,
   errorMsg,
-  section
+  section,
+  content
 };
