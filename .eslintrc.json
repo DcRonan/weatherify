@@ -13,6 +13,8 @@
   "rules": {
     "global-require": 0,
     "no-shadow": "off",
+    "no-return-assign": "off",
+    "no-unused-expressions": "off",
     "no-param-reassign": "off",
     "eol-last": "off",
     "arrow-parens": "off"
