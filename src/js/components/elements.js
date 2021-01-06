@@ -1,4 +1,5 @@
 const navBar = document.querySelector('nav');
+const main = document.querySelector('main');
 const form = document.querySelector('#form');
 const temp = document.querySelector('#temp');
 const cityName = document.querySelector('#city');
@@ -14,9 +15,12 @@ imgDiv.appendChild(img);
 const desc = document.querySelector('#description');
 const fTemp = document.querySelector('#fahrenheit');
 const cTemp = document.querySelector('#celsius');
+const errorMsg = document.querySelector('#error-msg');
+const section = document.querySelector('section');
 
 export {
   navBar,
+  main,
   temp,
   form,
   cityName,
@@ -29,5 +33,7 @@ export {
   img,
   desc,
   fTemp,
-  cTemp
+  cTemp,
+  errorMsg,
+  section
 };

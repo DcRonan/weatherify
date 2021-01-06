@@ -34,10 +34,18 @@ const showValues = data => {
   el.desc.textContent = data.desc;
 };
 
+const content = document.querySelector('#content');
+
+// Error message
+const showError = () => el.errorMsg.textContent = 'Enter a valid city';
+const hideError = () => el.errorMsg.innerHTML = '';
+const removeInfo = () => el.section.innerHTML = '';
+const showContent = () => el.section.appendChild(content)
+
 // City search
 el.form.addEventListener('submit', e => {
   e.preventDefault();
   const city = document.querySelector('#city-name').value.toLowerCase();
-  city === '' ? el.temp.innerHTML = 'Enter a valid city' : getWeatherData(city).then((result) => showValues(result));
+  city === '' ? showError() && removeInfo() : showContent() && getWeatherData(city).then((result) => showValues(result)) && hideError();
   el.form.reset();
 });
