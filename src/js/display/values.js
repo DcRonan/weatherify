@@ -44,6 +44,6 @@ const showContent = () => el.section.appendChild(el.content)
 el.form.addEventListener('submit', e => {
   e.preventDefault();
   const city = document.querySelector('#city-name').value.toLowerCase();
-  city === '' ? showError() && removeInfo() : showContent() && getWeatherData(city).then((result) => showValues(result)) && hideError();
+  city === '' ? showError() && removeInfo() : showContent() && getWeatherData(city).then((result) => showValues(result)).catch(error => showError(error)) && hideError();
   el.form.reset();
 });
