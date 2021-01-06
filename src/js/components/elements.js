@@ -40,5 +40,5 @@ export {
   errorMsg,
   section,
   content,
-  key
+  key,
 };
