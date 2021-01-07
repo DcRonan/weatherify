@@ -62,9 +62,8 @@ const key = 'YOUR_API_KEY_HERE';
 
 export default key;
 ```
-9. - [ ] Add `key.js` to `.gitignore`
-10. - [ ] Run `npm run build` to build the app
-11. - [ ] Go on your preferred `browser` and open `dist/index.html` in the folder directory
+9. - [ ] Run `npm run build` to build the app
+10. - [ ] Go on your preferred `browser` and open `dist/index.html` in the folder directory
 
 
 ## Testing ⚙
