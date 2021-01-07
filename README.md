@@ -43,7 +43,7 @@ I have created a weather app that allows you to search for any city and returns 
 
 ## Live Demo 🎥
 
-<a href="https://5ff5effd33c1910007bf8250--nervous-rosalind-ed6447.netlify.app/"><img src="https://www.netlify.com/img/deploy/button.svg" alt="weather app"></a>
+<a href="https://weatherify-application.netlify.app/"><img src="https://www.netlify.com/img/deploy/button.svg" alt="weather app"></a>
 
 ## Install ⏳
 
