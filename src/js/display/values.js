@@ -1,7 +1,7 @@
 import * as el from '../components/elements';
 import getWeatherData from '../components/getWeather';
 import Temp from '../helpers/convertTemp';
-import getImg from '../components/getImage'
+import getImg from '../components/getImage';
 
 let clicked;
 
@@ -46,6 +46,6 @@ el.form.addEventListener('submit', e => {
   e.preventDefault();
   const city = document.querySelector('#city-name').value.toLowerCase();
   city === '' ? showError() && removeInfo() : getImg(city).then((result) => getImg(result)).catch(error => showError(error)) && showContent() && getWeatherData(city).then((result) => showValues(result)).catch(error => showError(error)) && hideError();
-  document.body.style.background = 'none'
+  document.body.style.background = 'none';
   el.form.reset();
 });
