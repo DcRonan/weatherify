@@ -11,7 +11,7 @@ const getImageData = async (city) => {
 const getImg = async (city) => {
   const data = await getImageData(city);
 
-  document.body.style.background = `url(${data.results[0].urls.regular})`;
+  document.body.style.background = `url(${data.results[0].urls.full})`;
   document.body.style.backgroundRepeat = 'no-repeat';
   document.body.style.backgroundAttachment = 'fixed';
   document.body.style.backgroundPosition = 'center';
