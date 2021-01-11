@@ -21,11 +21,14 @@
 
 I have created a weather app that allows you to search for any city and returns their weather information. It includes details of it's temperature, description, feels like, humidity, wind speed, cloud coverage, sunrise and sunset time. Along with that, you can also change between Celsius and Fahrenheit.
 
+I have also included an image API that retrieves data from `Unsplash` and displays a background image of the location.
+
 ## Built With 🛠
 
 ```
 - JavaScript
 - OpenWeatherMap API
+- Unsplash API
 - Tailwind CSS
 - Webpack
 - HTML5
@@ -34,6 +37,7 @@ I have created a weather app that allows you to search for any city and returns 
 ```
 
 ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white&labelColor=000)
+![UnSplash API](https://img.shields.io/badge/-Unsplash_API-000?style=for-the-badge&logo=Unsplash&logoColor=white&labelColor=000)
 ![Tailwind CSS](https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=for-the-badge&logo=Tailwind-CSS&logoColor=white&labelColor=000)
 ![Webpack](https://img.shields.io/badge/-Webpack-8DD6F9?style=for-the-badge&logo=Webpack&logoColor=white&labelColor=000)
 ![npm](https://img.shields.io/badge/-npm-CB3837?style=for-the-badge&logo=npm&logoColor=white&labelColor=000)
