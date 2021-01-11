@@ -16,6 +16,7 @@ const getImg = async (city) => {
   document.body.style.backgroundAttachment = 'fixed';
   document.body.style.backgroundPosition = 'center';
   document.body.style.backgroundSize = 'cover';
+  document.body.style.overflow = 'hidden'
 
   return city
 };
