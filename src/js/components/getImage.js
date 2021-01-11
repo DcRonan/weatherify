@@ -1,7 +1,7 @@
-// import * as el from './elements'
+import { unsplashKey } from "./key";
 
 const getImageData = async (city) => {
-  const url = `https://api.unsplash.com/search/photos?query=${city}&orientation=landscape&client_id=OJAyay-kVuDWzP_QDkmOt3FSIhl7sRhk7oOcZQbE70k`;
+  const url = `https://api.unsplash.com/search/photos?query=${city}&orientation=landscape&client_id=${unsplashKey}`;
   const response = await fetch(url)
     .then((response) => response.json())
     .catch((error) => error);
