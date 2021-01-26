@@ -19,7 +19,7 @@
 
 ![screenshot](./assets/images/main-sc.png)
 
-I have created a weather app that allows you to search for any city and returns it's weather information. It includes details of it's temperature, description, feels like, humidity, wind speed, cloud coverage, sunrise and sunset time. Along with that, you can also change between Celsius and Fahrenheit.
+I have created a weather app that allows you to search for any city and returns its weather information. It includes details of its temperature, description, feels like, humidity, wind speed, cloud coverage, sunrise and sunset time. Along with that, you can also change between Celsius and Fahrenheit.
 
 I have also included an image API that retrieves data from `Unsplash` and displays a background image of the location.
 
@@ -56,7 +56,7 @@ I have also included an image API that retrieves data from `Unsplash` and displa
 1. - [ ] Open your `Terminal`
 2. - [ ] Navigate to the directory where you will like to install the repo by running `cd weatherify`
 3. - [ ] Run `git clone git@github.com:DcRonan/weatherify.git` to download <b>or</b> you can download using `HTTPS` by running `git clone https://github.com/DcRonan/weatherify.git` in the terminal
-4. - [ ] Run `cd weatherify` to enter directory
+4. - [ ] Run `cd weatherify` to enter the directory
 5. - [ ] Run `npm i` to install all the packages
 6. - [ ] Sign up [here](https://home.openweathermap.org/users/sign_up) for your own API key (You will receive the key via email and can access it in your account)
 7. - [ ] Create a `key.js` file in `src/js/components` directory
@@ -72,10 +72,10 @@ export default key;
 
 ## Testing ⚙
 
-> I have used linters to test my code, which include: [webhint](https://webhint.io/), [eslint](https://eslint.org/) and [stylelint](https://stylelint.io/)
+> I have used linters to test my code, which includes: [webhint](https://webhint.io/), [eslint](https://eslint.org/) and [stylelint](https://stylelint.io/)
 
 1. - [ ] Open `Terminal` again
-2. - [ ] Run `cd weatherify` to enter directory
+2. - [ ] Run `cd weatherify` to enter the directory
 3. - [ ] Run `npm test` to start testing
 4. - [ ] All tests will pass ✅
 
