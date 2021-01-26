@@ -19,7 +19,7 @@
 
 ![screenshot](./assets/images/main-sc.png)
 
-I have created a weather app that allows you to search for any city and returns their weather information. It includes details of it's temperature, description, feels like, humidity, wind speed, cloud coverage, sunrise and sunset time. Along with that, you can also change between Celsius and Fahrenheit.
+I have created a weather app that allows you to search for any city and returns it's weather information. It includes details of it's temperature, description, feels like, humidity, wind speed, cloud coverage, sunrise and sunset time. Along with that, you can also change between Celsius and Fahrenheit.
 
 I have also included an image API that retrieves data from `Unsplash` and displays a background image of the location.
 
